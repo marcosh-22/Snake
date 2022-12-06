@@ -69,6 +69,7 @@ function draw_cell(x, y, fillColor = "black", strokeStyle = "white"){
     ctx.strokeRect(x*cw, y*cw, cw, cw);
 }
 
+
 //Verifica se houve colisão
 function check_collision(x, y, array){
     for(var i = 0; i < array.length; i++){
@@ -108,7 +109,7 @@ function draw_snake(){
         if (i == 0) {
             draw_cell(c.x, c.y, "yellow", "black");
         } else {
-            draw_cell(c.x, c.y, "green", "black");
+            draw_cell(c.x, c.y, "darkgreen", "black");
         }
     }
 }
